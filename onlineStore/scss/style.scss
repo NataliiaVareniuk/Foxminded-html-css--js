@@ -1,0 +1,15 @@
+@use "sass:math";
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,regular,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,regular,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Playfair&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,italic,500italic,600italic,700italic,800italic&display=swap");
+@import "reset";
+@import "mixins";
+@import "variables";
+@import "footer";
+@import "header";
+
+@import "allites";
+@import "home";
+@import "history";

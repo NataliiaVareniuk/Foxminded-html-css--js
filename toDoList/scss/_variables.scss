@@ -1,0 +1,15 @@
+:root {
+  --button_color: #00ae1c;
+  --light_gray: #dedfe5;
+  --background_color: #f2f5f7;
+  --text_color: #323749;
+  --attention_color: #ff4f00;
+  --white_color: #fff;
+  --background-checked: #efefef;
+}
+
+$maxWidthContainer: 700;
+
+$containerPadding: 16;
+
+$containerWidth: $maxWidthContainer + 2 * $containerPadding;

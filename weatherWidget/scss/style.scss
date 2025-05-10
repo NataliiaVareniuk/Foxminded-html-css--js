@@ -1,0 +1,240 @@
+@use "sass:math";
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,regular,500,700,900&display=swap");
+
+@import "reset";
+@import "mixins";
+@import "variables";
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--white_color);
+  color: var(--black_color);
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+  & > .page {
+    flex-grow: 1;
+  }
+}
+
+[class*="__container"] {
+  max-width: toRem($containerWidth);
+  padding-inline: toRem($containerPadding);
+  margin: 0 auto;
+}
+.header {
+  padding-block: toRem(35);
+}
+.content-header {
+  display: flex;
+  justify-content: center;
+  &__logo {
+    position: relative;
+    width: toRem(88);
+    height: toRem(15);
+
+    background: url("../img/logo.png") center center/100% no-repeat;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      width: toRem(20);
+      height: toRem(16);
+      background-color: var(--main_color);
+      top: 0;
+      left: toRem(68);
+    }
+  }
+}
+
+.weather {
+  &__search {
+    margin-bottom: toRem(9);
+  }
+
+  &__board {
+    padding: toRem(8) toRem(9) toRem(6) toRem(10);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: toRem(22);
+    align-items: center;
+
+    color: var(--white_color);
+    background-color: var(--main_color);
+    border-radius: toRem(10);
+    &:not(:last-child) {
+      margin-bottom: toRem(27);
+    }
+  }
+  &__forecast {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.search {
+  display: flex;
+  flex-direction: column;
+  row-gap: toRem(9);
+  position: relative;
+
+  &__input {
+    border-radius: toRem(10);
+
+    border: toRem(1) solid var(--light_gray);
+    padding: toRem(18) toRem(14);
+    &::placeholder {
+      color: var(--black_color);
+      font-size: toRem(14);
+      font-weight: 300;
+      line-height: 1.458;
+      letter-spacing: 0.02em;
+    }
+  }
+  &__button {
+    width: toRem(11);
+    height: toRem(11);
+    background: url("../img/button.png") center center/100% no-repeat;
+    position: absolute;
+    top: toRem(23);
+    right: toRem(23);
+    transition: all 0.3s;
+    @media (any-hover: hover) {
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
+  }
+  &__label {
+    padding-left: toRem(14);
+    color: var(--gray_color);
+    font-weight: 300;
+    font-size: toRem(10);
+    line-height: 1.458;
+    letter-spacing: 0.02em;
+  }
+}
+
+.board {
+  &__temperature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+
+  &__city {
+    font-size: toRem(14);
+
+    line-height: 1.458;
+    letter-spacing: 0.02em;
+    display: flex;
+    flex-direction: column;
+    row-gap: toRem(5);
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+  }
+
+  &__imag {
+    width: toRem(72);
+  }
+}
+.temperature {
+  &__value {
+    margin-bottom: toRem(-11);
+    font-weight: 700;
+    font-size: toRem(54);
+    line-height: 1.458;
+    letter-spacing: -0.06em;
+  }
+
+  &__today {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    column-gap: toRem(8);
+  }
+}
+.city {
+  &__description {
+    font-weight: 500;
+    text-align: center;
+  }
+
+  &__city-text {
+    font-weight: 400;
+    text-align: center;
+  }
+}
+
+.forecast {
+  border-top: toRem(1) solid var(--light_gray);
+  padding-block: toRem(8);
+
+  &__day {
+    font-size: toRem(17);
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 1.458;
+    letter-spacing: 0.02rem;
+  }
+
+  &__imag {
+    width: toRem(73);
+    height: toRem(64);
+  }
+
+  &__precipitation {
+    font-weight: 400;
+    font-size: toRem(14);
+    line-height: 1.458;
+    letter-spacing: 0.02rem;
+  }
+  &__description {
+    font-weight: 400;
+    font-size: toRem(14);
+    line-height: 1.458;
+    letter-spacing: 0.02rem;
+  }
+
+  &__temperature {
+    display: flex;
+    align-self: stretch;
+  }
+}
+
+.list {
+  &__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: toRem(8);
+    align-items: flex-end;
+  }
+  &__item {
+    font-size: toRem(14);
+    font-weight: 500;
+    line-height: 1.458%;
+    letter-spacing: -0.07rem;
+  }
+
+  &__item--time {
+    font-weight: 300;
+    font-size: toRem(9);
+    line-height: 1.458%;
+    letter-spacing: 0.02em;
+  }
+}

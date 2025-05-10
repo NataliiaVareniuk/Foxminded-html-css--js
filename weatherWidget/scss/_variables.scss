@@ -1,0 +1,13 @@
+:root {
+  --main_color: #ff4f00;
+  --white_color: #ffffff;
+  --light_gray: #ababab;
+  --black_color: #000000;
+  --gray_color: #676767;
+}
+
+$maxWidthContainer: 375;
+
+$containerPadding: 24;
+
+$containerWidth: $maxWidthContainer + 2 * $containerPadding;

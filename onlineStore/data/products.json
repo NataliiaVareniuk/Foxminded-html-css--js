@@ -1,0 +1,101 @@
+[
+      {
+        "article":"01",
+        "img": "./img/products/product01.png",
+        "title": "Stylish chair",
+        "price": 120,
+        "category": "Forest",
+        "rating": 5
+        
+       },
+
+       {
+        "article":"02",
+        "img": "./img/products/product02.png",
+        "title": "Stylish chair",
+        "price": 80,
+        "category": "Other",
+         "rating": 5
+       },
+      {
+        "article":"03",
+        "img": "./img/products/product03.png",
+        "title": "Stylish chair",
+        "price": 120,
+        "category": "Kids",
+        "rating": 5
+
+       },
+       {
+        "article":"04",
+        "img": "./img/products/product04.png",
+        "title": "Stylish chair",
+        "price": 120,
+        "category": "Forest",
+        "rating": 5
+       },
+       {
+        "article":"05",
+        "img": "./img/products/product05.png",
+        "title": "Stylish chair",
+        "price": 120,
+        "category": "Forest",
+        "rating": 5
+       },
+       {
+        "article":"06",
+        "img": "./img/products/product06.png",
+        "title": "Stylish chair",
+        "price": 50,
+        "category": "Other",
+        "rating": 5
+       },
+       {
+        "article":"07",
+        "img": "./img/products/product07.png",
+        "title": "Stylish chair",
+        "price": 120,
+        "category": "Forest",
+        "rating": 5
+       },
+       { 
+        "article":"08",
+        "img": "./img/products/product08.png",
+       "title": "Stylish chair",
+       "price": 75,
+       "category": "Forest",
+       "rating": 5
+      },
+      {
+        "article":"09",
+        "img": "./img/products/product08.png",
+        "title": "Stylish chair",
+        "price": 120,
+        "category": "Forest",
+        "rating": 5
+       },
+       {
+        "article":"10",
+        "img": "./img/products/product08.png",
+        "title": "Stylish chair",
+        "price": 120,
+        "category": "Other",
+        "rating": 5
+       },
+       {
+        "article":"11",
+        "img": "./img/products/product08.png",
+        "title": "Stylish chair",
+        "price": 120,
+        "category": "Forest",
+        "rating": 5
+       },
+       { 
+        "article":"12",
+        "img": "./img/products/product08.png",
+       "title": "Stylish chair",
+       "price": 40,
+       "category": "Kids",
+       "rating": 5
+      }
+]    

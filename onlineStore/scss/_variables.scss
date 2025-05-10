@@ -1,0 +1,33 @@
+:root {
+  --dark_background: #191919;
+  --white_color: #ffffff;
+
+  --activ_color: #cc5520;
+  --black_color: #000000;
+  --black_text: #201616;
+  --button_color: #cc5520;
+
+  --gray_color: #9d9d9d;
+  --dark-gray_color: #9a9494;
+
+  --gray_color02: #969595;
+  --gray_color03: #a0a0a0;
+  --gray_color04: #8c8c8c;
+  --whight_background2: #f8f8f8;
+  --whight_background: #fefefe;
+  --background-allites: #f9f9f9;
+  --light_color: #efefef;
+  --light-gray_color: #f4f4f4;
+  --background-history: #e6e6e6;
+  --product_count: "0";
+  --text_color: #484848;
+  --red_color: #ff3d00;
+  --variable-color: #ffffff;
+  --variable-background: #cc5520;
+}
+
+$maxWidthContainer: 1170;
+
+$containerPadding: 10;
+
+$containerWidth: $maxWidthContainer + 2 * $containerPadding;

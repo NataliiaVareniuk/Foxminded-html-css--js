@@ -1,0 +1,211 @@
+//   *  footer*
+.footer {
+  padding-block: clamp(3.125rem, 2.3rem + 3.52vw, 4.875rem)
+    clamp(1.75rem, 1.101rem + 2.77vw, 3.125rem);
+  background-color: var(--dark_background);
+  color: var(--white_color);
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset-inline-start: 0;
+    top: toRem(0);
+    block-size: 100%;
+    inline-size: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    z-index: 12;
+
+    .menu-open & {
+      filter: blur(toRem(6));
+
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+.content-footer {
+  &__copyright {
+    display: flex;
+    justify-content: center;
+    color: var(--white_color);
+    font-size: toRem(12);
+    font-weight: 700;
+  }
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: clamp(2.625rem, 2.035rem + 2.52vw, 3.875rem);
+  margin-bottom: toRem(50);
+
+  @media (max-width: toEm(700)) {
+    flex-direction: column;
+  }
+
+  @media (max-width: toEm(414)) {
+    flex-direction: column;
+    margin-bottom: toRem(120);
+  }
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: toEm(700)) {
+    align-items: center;
+  }
+
+  &__logo {
+    width: toRem(121);
+    height: toRem(21);
+    margin-bottom: toRem(20);
+  }
+
+  &__info {
+    max-width: toRem(276);
+    margin-bottom: toRem(9);
+    letter-spacing: toEm(0.7);
+    line-height: 1.5;
+
+    @media (max-width: toEm(700)) {
+      text-align: center;
+    }
+  }
+
+  &__phone {
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: toEm(0.7);
+    margin-bottom: toRem(15);
+  }
+
+  &__media {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: toRem(15);
+  }
+}
+
+.media {
+  &__icon {
+    width: toRem(23);
+    height: toRem(23);
+  }
+
+  &__icon--instagram {
+    background: url("../img/icon/instagram.svg") center center/cover no-repeat;
+
+    @media (max-width: toEm(604.98)) {
+      width: toRem(23);
+      height: toRem(23);
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        background: url("../img/icon/instagram-color.svg") center center/cover
+          no-repeat;
+      }
+    }
+  }
+
+  &__icon--telegram {
+    @media (any-hover: hover) {
+      &:hover {
+        filter: invert(68%) sepia(86%) saturate(7462%) hue-rotate(180deg)
+          brightness(99%) contrast(101%);
+      }
+    }
+  }
+
+  &__icon--twitter {
+    @media (any-hover: hover) {
+      &:hover {
+        filter: invert(46%) sepia(91%) saturate(2025%) hue-rotate(180deg)
+          brightness(100%) contrast(89%);
+      }
+    }
+  }
+}
+
+.menu-footer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: clamp(1.25rem, -0.401rem + 7.04vw, 4.75rem);
+  row-gap: toRem(40);
+  flex-wrap: wrap;
+
+  @media (max-width: toEm(700)) {
+    justify-content: center;
+  }
+
+  @media (max-width: toEm(412)) {
+    display: grid;
+    grid-template-columns:
+      toRem(39) minmax(toRem(94), 1fr) minmax(toRem(94), 1fr)
+      toRem(39);
+    grid-template-rows: auto;
+    column-gap: toRem(1);
+    row-gap: toRem(40);
+  }
+
+  &__items {
+    @media (max-width: toEm(412)) {
+      &:nth-child(1) {
+        grid-column: 2 / span 1;
+      }
+      &:nth-child(2) {
+        grid-column: 3 / span 1;
+      }
+      &:nth-child(3) {
+        grid-row: 2 / span 1;
+        grid-column: 2 / span 1;
+      }
+      &:nth-child(4) {
+        grid-row: 2 / span 1;
+        grid-column: 3 / span 1;
+      }
+      &:nth-child(5) {
+        position: absolute;
+        bottom: clamp(-6.25rem, -11.563rem + 25vw, -5.125rem);
+        right: clamp(4.375rem, -4.479rem + 41.67vw, 6.25rem);
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: toRem(15);
+  }
+
+  &__item {
+    font-size: toRem(14);
+    font-weight: 400;
+
+    @media (any-hover: hover) {
+      &:not(:first-child) {
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &__item--title {
+    font-size: toRem(16);
+    font-weight: 600;
+    line-height: 1.5;
+  }
+}

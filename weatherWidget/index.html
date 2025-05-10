@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Searchable weather widget</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container content-header">
+            <div class="content-header__logo"> </div>
+        </div>
+    </header>
+    <main class="page">
+        <div class="page__container weather">
+            <div class="weather__search search">
+                <button id="button" class="search__button"></button>
+                <input id="city" class="search__input" type="text" placeholder="Enter your location">
+                <label for="city" class="search__label"> Celected: </label>
+            </div>
+            <div class="weather__board board">
+                <div class="board__temperature temperature">
+                    <div class="temperature__value">-5&#176;&#67; </div>
+                    <div class="temperature__today today ">
+                        <div class="today__precipitation">Rain</div>
+                        <div class="today__maximum">+8&#176;&#67;</div>
+                    </div>
+                </div>
+                <div class="board__city city">
+                    <div class="city__description">Clouds</div>
+                    <div class="city__city-text">Kyiv, Ukraine</div>
+                </div>
+                <img class="board__imag" src="img/icon/clouds.svg" alt="weather">
+            </div>
+            <div class="weather__forecast-container ">
+                <div class="weather__forecast forecast">
+                    <div class="forecast__day">THU</div>
+                    <img class="forecast__imag" src="img/icon/drizzle-rain.svg" alt="weather">
+                    <div class="forecast__precipitation">Rain</div>
+                    <div class="forecast__temperature list">
+                        <ul class="list__items ">
+                            <li class="list__item list__item--time">Day</li>
+                            <li class="list__item">+ 5 &#176;&#67;</li>
+                            <li class="list__item">+ 1 &#176;&#67;</li>
+                            <li class="list__item list__item--time">Night</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="weather__forecast forecast">
+                    <div class="forecast__day">THU</div>
+                    <img class="forecast__imag" src="img/icon/drizzle-rain.svg" alt="weather">
+                    <div class="forecast__precipitation">Rain</div>
+                    <div class="forecast__temperature list">
+                        <ul class="list__items ">
+                            <li class="list__item list__item--time">Day</li>
+                            <li class="list__item">+ 5 &#176;&#67;</li>
+                            <li class="list__item">+ 1 &#176;&#67;</li>
+                            <li class="list__item list__item--time">Night</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="weather__forecast forecast">
+                    <div class="forecast__day">THU</div>
+                    <img class="forecast__imag" src="img/icon/drizzle-rain.svg" alt="weather">
+                    <div class="forecast__precipitation">Rain</div>
+                    <div class="forecast__temperature list">
+                        <ul class="list__items ">
+                            <li class="list__item list__item--time">Day</li>
+                            <li class="list__item">+ 5 &#176;&#67;</li>
+                            <li class="list__item">+ 1 &#176;&#67;</li>
+                            <li class="list__item list__item--time">Night</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="weather__forecast forecast">
+                    <div class="forecast__day">THU</div>
+                    <img class="forecast__imag" src="img/icon/drizzle-rain.svg" alt="weather">
+                    <div class="forecast__precipitation">Rain</div>
+                    <div class="forecast__temperature list">
+                        <ul class="list__items ">
+                            <li class="list__item list__item--time">Day</li>
+                            <li class="list__item">+ 5 &#176;&#67;</li>
+                            <li class="list__item">+ 1 &#176;&#67;</li>
+                            <li class="list__item list__item--time">Night</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="weather__forecast forecast">
+                    <div class="forecast__day">THU</div>
+                    <img class="forecast__imag" src="img/icon/drizzle-rain.svg" alt="weather">
+                    <div class="forecast__precipitation">Rain</div>
+                    <div class="forecast__temperature list">
+                        <ul class="list__items ">
+                            <li class="list__item list__item--time">Day</li>
+                            <li class="list__item">+ 5 &#176;&#67;</li>
+                            <li class="list__item">+ 1 &#176;&#67;</li>
+                            <li class="list__item list__item--time">Night</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"> </script>
+</body>
+
+</html>
