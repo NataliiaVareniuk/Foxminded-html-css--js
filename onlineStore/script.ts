@@ -95,23 +95,29 @@ function validateEmail(): boolean  {
 }
 
 async function getOrder() {
-	try {
-		if(!dataJson.length){
-			const response = await fetch('/data/products.json');
-			if (!response.ok) {
-				throw new Error(`Error: ${response.status}`);
-			  }
-			  dataJson = await response.json();
-			  dataJsonById = dataJson.reduce((accum, item) => {
-				accum[item.article] = item;
-				return accum;
-			}, {});
+try {
+    if (!dataJson.length) {
+      const response = await fetch('/data/products.json'); 
+      if (!response.ok) {
+        throw new Error(`Error: ${response.status}`);
+      }
+
+      dataJson = await response.json();
+      console.log('Data loaded:', dataJson);
+
+      dataJsonById = dataJson.reduce((acc, item) => {
+        acc[item.article] = item;
+        return acc;
+      }, {});
+
       showAllProfucts(dataJson, minAmountOnPage);
-      if(busketCount) busketCount.style.setProperty('--product_count', `${totalCountInBusket}`);
+
+      if (busketCount)
+        busketCount.style.setProperty('--product_count', `${totalCountInBusket}`);
     }
-	 } catch (error) {
-		 console.error("Read error:", error);
-	}
+  } catch (error) {
+    console.error("Read error:", error.message);
+  }
 }
 
 if (output)  output.innerHTML = convert(slider.value);
