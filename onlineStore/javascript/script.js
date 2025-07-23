@@ -83,7 +83,7 @@ function validateEmail() {
 async function getOrder() {
     try {
         if (!dataJson.length) {
-            const response = await fetch('http://localhost:5500/data/products.json');
+            const response = await fetch('/data/products.json');
             if (!response.ok) {
                 throw new Error(`Error: ${response.status}`);
             }
