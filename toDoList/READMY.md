@@ -7,7 +7,7 @@ Allows **adding**, **editing**, **marking as completed**, and **deleting tasks**
 
 ## **Demo**
 
-[View the live app](https://https://simpletodojs.netlify.app//)
+[View the live app](https://simpletodojs.netlify.app/)
 
 ## **Features**
 
