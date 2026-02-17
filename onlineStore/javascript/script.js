@@ -280,9 +280,9 @@ function bubbleSortArr(array) {
         notFinish = false;
         for (let i = 1; i < array.length; i++) {
             if (array[i - 1].price > array[i].price) {
-                let tempVariable = array[i - 1].price;
-                array[i - 1].price = array[i].price;
-                array[i].price = tempVariable;
+                let tempVariable = array[i - 1];
+                array[i - 1] = array[i];
+                array[i] = tempVariable;
                 notFinish = true;
                 iterationCount++;
             }
