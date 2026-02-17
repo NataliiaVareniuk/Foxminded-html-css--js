@@ -1,26 +1,27 @@
-Online Store
+## Online Store
 A simple online store project created as part of my learning at FoxmindEd. Built with HTML, CSS, and JavaScript.
 
-Goal
+**Goal**
 To practice essential web development skills:
 Semantic HTML structure
 CSS layout (Flexbox, Grid)
 JavaScript DOM manipulation
 Basic shopping cart logic
 
-Technologies
+**Technologies**
 HTML5
 CSS3
 JavaScript (ES6)
 
-Features
+**Features**
 Product list display
 Product card view
 Add items to cart
 Remove items from cart
 Calculate total amount
+Product sorting (by price or name)
 
-Project Structure
+**Project Structure**
 onlineStore/
 │
 ├── index.html           # Main HTML file
@@ -29,7 +30,7 @@ onlineStore/
 └── assets/            
         
 
-Lessons Learned
+**Lessons Learned**
 This project helped me improve:
 DOM manipulation
 Working with event listeners
