@@ -83,7 +83,7 @@ function validateEmail() {
 async function getOrder() {
     try {
         if (!dataJson.length) {
-            const response = await fetch('http://localhost:5500/data/products.json');
+            const response = await fetch('./data/products.json');
             if (!response.ok) {
                 throw new Error(`Error: ${response.status}`);
             }
@@ -280,9 +280,9 @@ function bubbleSortArr(array) {
         notFinish = false;
         for (let i = 1; i < array.length; i++) {
             if (array[i - 1].price > array[i].price) {
-                let tempVariable = array[i - 1].price;
-                array[i - 1].price = array[i].price;
-                array[i].price = tempVariable;
+                let tempVariable = array[i - 1];
+                array[i - 1] = array[i];
+                array[i] = tempVariable;
                 notFinish = true;
                 iterationCount++;
             }

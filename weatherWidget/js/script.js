@@ -53,7 +53,7 @@ cityInput.addEventListener ('keyup', event => {
 
 searchBtn.addEventListener ('click', () => {
 searchLabel.style.setProperty('color', gray_color);
-searchLabel.textContent = 'Celected: ';
+searchLabel.textContent = 'Selected: ';
 cityInput.value = '';
 forecastWeatherContainer.innerHTML = '';
 })
@@ -111,7 +111,7 @@ function cityNotFound() {
 
 function cityFound(location, country) {
   searchLabel.style.setProperty('color', gray_color);
-  searchLabel.textContent = `Celected: ${location}, ${country}`;
+  searchLabel.textContent = `Selected: ${location}, ${country}`;
 }
 
 function getWeather(data) {
