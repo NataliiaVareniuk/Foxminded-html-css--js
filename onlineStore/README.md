@@ -37,7 +37,4 @@ Working with event listeners
 Basic state management in JavaScript
 Writing cleaner HTML and CSS code
 
-Author
-Nataliia Vareniuk
 
-This is a training project and not intended for production use.
