@@ -1,62 +1,30 @@
-# ToDo List Application
+# **To-Do List**
 
-A fully functional task management web application developed as part of front-end training. This project demonstrates core skills in JavaScript, DOM manipulation, local storage, and semantic HTML/CSS.
+## **Description**
 
-## Technologies Used
+A single-page **To-Do application** built with plain HTML, SCSS/CSS, and JavaScript.
+Allows **adding**, **editing**, **marking as completed**, and **deleting tasks**. Data is stored in `localStorage`.
 
-- HTML5 – Semantic layout and structure  
-- CSS3 / SCSS – Modular styling and responsive design  
-- JavaScript (Vanilla) – Logic implementation without frameworks  
-- LocalStorage API – Saving user data between sessions  
+## **Demo**
 
-## Features
+[View the live app](https://https://simpletodojs.netlify.app//)
 
-- Add, edit, and delete tasks  
-- Mark tasks as completed  
-- Clear all tasks  
-- Persistent task list using localStorage  
-- Responsive and clean user interface  
+## **Features**
 
-## File Structure
+- **Add a task** (via button or Enter key)
+- **Edit existing tasks**
+- **Mark tasks as completed** (checkbox)
+- **Delete individual tasks**
+- **Clear the entire list**
+- **Automatically save state** in `localStorage` between page reloads
 
-Foxminded-html-css--js/
-├── toDoList/
-│ ├── index.html
-│ ├── styles/
-│ │ └── style.css
-│ ├── scripts/
-│ │ └── main.js
+## **Project Structure**
 
-bash
-Копіювати
-Редагувати
-
-## Getting Started
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/NataliiaVareniuk/Foxminded-html-css--js.git
-cd Foxminded-html-css--js/toDoList
-Open index.html in your browser.
-No server or build tools required.
-
-Learning Goals
-This project was created to practice:
-
-DOM traversal and manipulation
-
-Event-driven user interaction
-
-Code modularity and naming conventions
-
-JavaScript without frameworks
-
-Using localStorage for persistence
-
-
-Author
-Nataliia Vareniuk
-Frontend Developer (in training)
-GitHub: NataliiaVareniuk
-LinkedIn: Nataliia Vareniuk
+- `index.html` — main page
+- `css/style.css` — generated CSS file
+- `scss/style.scss` — main SCSS file
+- `scss/_variables.scss` — variables
+- `scss/_mixins.scss` — mixins
+- `scss/_reset.scss` — CSS reset
+- `js/script.js` — application logic
+- `img/` — icons
