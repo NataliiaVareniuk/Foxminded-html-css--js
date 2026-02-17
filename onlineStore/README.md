@@ -19,7 +19,11 @@ Product card view
 Add items to cart
 Remove items from cart
 Calculate total amount
-Product sorting (by price or name)
+Product filtering by category
+Price filtering with range slider
+Product search
+Price sorting (ascending)
+Cart persistence with localStorage
 
 **Project Structure**
 onlineStore/
